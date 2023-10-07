@@ -1,0 +1,668 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+}
+
+body{
+background-color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav.navbar.navbar-expand-lg.bg-light .container{
+    background-color: white;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline;
+}
+
+.profileImage{
+    padding: 5%;
+    padding-left: 5%;
+    border-radius: 2%;
+    border: 5%;
+    padding-top: 0%;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+    float: left;
+    margin: 5px;
+}
+
+.homeText {
+    text-align: left;
+    padding-right: 2%;
+    padding-top: 3%;
+    height: 50%;
+    font-size: larger;
+}
+
+.dropbtn{
+cursor: pointer;
+}
+
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color:rgba(81, 91, 142, 0.813);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: azure;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color:aqua;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+  
+  .navbar-nav {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: white ;
+      width: 100%;
+      float: right;
+      text-align: center;
+      padding: 5%;
+      padding-right: 0%;
+      justify-content: right;
+    }
+
+    .navbar-brand{
+      padding-right: 1%;
+      padding: 0%;
+      text-align: left;
+    }
+
+    .navbar-brand img{
+      padding-right: 0.5%;
+      vertical-align: auto;
+    }
+
+    #more{
+      display: none;
+    }
+
+    .introword {
+      font-size: 300%;
+      font-weight: 800;
+      color: blue;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 40pt;
+      text-align: center;
+    }
+
+    .introbottom {
+      font-size: 200%;
+      font-weight: 600;
+      color: blue;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 30pt;
+      text-align: left;
+    }
+
+    .introword div {
+      padding: 0%;
+    }
+
+    div div.me-3.pe-3{
+        margin-right: 9%;
+        margin-left: 73%;
+    }
+
+    .introimg {
+      height: 32%;
+      width: 20%;
+      float: right;
+      margin-top: 0%;
+    }
+
+    .blogimg{
+      height: 7%;
+      width: 100%;
+      margin-top: 0%;
+    }
+
+    .bloghead{
+      color: blue;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .blogbody{
+      color:brown;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .blogmain{
+      text-align: justify;
+    }
+
+    blockquote{
+      text-align: center;
+    }
+    
+    .nav-item {
+      float: left;
+      border-right: solid white;
+      text-align: center;
+      width: 15%;
+      padding: 0%;
+    }
+    
+    a{
+      text-align: center;
+      text-decoration: none;
+    }    
+
+    .bottom{
+        height: 30%;
+    }
+
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 1% 5% 1% 5%;
+      text-decoration: none;
+      background-color: white;
+    }
+  
+    h2 {
+      text-transform: uppercase;
+    }
+  
+    
+      p {
+        text-align: justify;
+      }
+    
+      .footermsg {
+            background-color: grey;
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            text-align: center;
+            padding: 10px 10px 0px 10px;
+            height: 40px;
+            margin-top: 10%;
+    }
+
+    .footermain{
+      background-color: rgba(32, 54, 162, 0.813);
+      height: 45vh;
+      color: white;
+      display: flex;
+      width: 100%;
+    }
+
+    .footer{
+      justify-content: space-between;
+      padding-right: 15%;
+    }
+
+    .getintouch{
+      font-weight: 500;
+      font-size: 2pc;
+    }
+
+   div.col-6.footerleft{
+      margin-top: 2%;
+      margin-left: 4%;
+      color: white;
+    }
+    
+   .contactButton {
+       background-color: #4CAF50; /* Green */
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      border-radius: 6px;
+      transition-duration: 0.4s;
+      position: fixed;
+      bottom: 20px;
+      font-family: cursive;
+      animation: mybutton 3s infinite;
+      display: block;
+      text-align: center;
+      position: fixed;
+      bottom: 45%; 
+      right: 1%;
+    }
+
+    /*#myBtn{
+      background-color: #4CAF50; /* Green 
+      border: 1px solid white;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 8px;
+      transition-duration: 0.4s;
+      position: fixed;
+      bottom: 60px;
+      font-family: cursive;
+      animation: mybutton 3s infinite;
+    }*/
+
+    div a.text-decoration-none.pe-3.me-3{
+      height: 140px;
+      width: 300px;
+    }
+
+    .rounded.twtImages{
+      height: 140px;
+      width: 300px;
+      justify-content: center;
+      clear: both;
+    }
+    
+    .button:hover {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+
+    input {
+      width: 50%;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    
+    input[type=text] {
+      width: 50%;
+      padding: 1% 2%;
+      margin: 2% 0;
+    }
+
+    textarea {
+      width: 75%;
+      height: 8%;
+      padding: 1% 1%;
+      margin: 2% 0;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      border: 2px solid white; 
+      color: white; 
+      padding: 8px 32px; 
+      text-align: center; 
+      text-decoration: none; 
+      border-radius: 8px;
+      margin: 8px 0;
+      Position: relative;
+    }
+
+    .card-header{
+      color: #0c63e4;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #tech {
+      margin-bottom: 5%;
+    }
+    
+    .accordion-button{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .footerlinks{
+      list-style-type: none;
+      text-align: right;
+    }
+    .footerlink{
+      padding: 2%;
+      justify-items: right;
+      justify-self: right;
+    }
+    .footer-right{
+      padding: 2%;
+      justify-content: flex-end;
+      justify-self: flex-end;
+    }
+
+    .modal.fade{
+      height: 50vh;
+      color: brown;
+    }
+
+    .container .list .webpages img{
+      height: 75%;
+      width: 75%;
+    }
+
+    .webpages{
+      text-align: center;
+      justify-content: center;
+      padding-left: 0rem;
+    }
+
+    .cardodd.text-center,.cardeven.text-center{
+      padding-left: 1.5% ;
+      padding-right: 1.5%;
+      padding-top: 1.5% ;
+      padding-bottom: 1.5%;
+      justify-content: center;
+    }
+
+    .liInnerdiv.text-center{
+      border-radius: 1vw;
+      border-bottom: rgb(187, 179, 179);
+      border-left: rgb(239, 221, 221);
+      border-left: rgb(239, 221, 221);
+      border-style: outset;
+      width: 87%;
+      margin: auto;
+      padding: 1%;
+    }
+
+    .liInnerdiv2.text-center{
+      border-radius: 1vw;
+      border-bottom: rgb(187, 179, 179);
+      border-left: rgb(239, 221, 221);
+      border-left: rgb(239, 221, 221);
+      border-style: outset;
+      padding: 1%;
+    }
+
+    .row.row-content.cardServ{
+      padding-top: 2% ;
+      padding-bottom: 2%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      width: 95%;
+      justify-content: center;
+    }
+
+    .cardServStudy{
+      padding-top: 1.5% ;
+      padding-bottom: 1.5%;
+      margin: auto;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      border-radius: 1vw;
+      border-bottom: rgb(187, 179, 179);
+      border-left: rgb(239, 221, 221);
+      border-left: rgb(239, 221, 221);
+      border-style: outset;
+      width: 75%;
+      justify-content: center;
+    }
+
+    .d-flex{
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mediaOverlay{
+      width: 50%;
+      margin: auto;
+      vertical-align: middle;
+      background-color: rgba(0, 0, 0.5, 0.9);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .blogPoster{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border-radius: 7%;
+      opacity: 0.9;
+      height: 55%; 
+      width: 95%;
+    }
+    
+    .cardBlogBody{
+      color: rgb(41, 209, 153);
+      padding: 1%;
+      vertical-align: middle;
+      opacity: 0.2;
+    }
+
+   /* .mediaOverlay{
+      position: fixed;
+      display: block;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    */
+    .overlayText{
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      font-size: 3em;
+      color: rgb(148, 148, 148);
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
+
+    .overlayText:hover .mediaOverlay{
+      visibility: hidden;
+      opacity: 1;
+    }
+
+    .adImg{
+      display: flex;
+      margin: auto;
+      text-align: center;
+      justify-items: center;
+      height: 100%;
+      width: 40vw;
+    }
+    .adIntro{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+      justify-items: center;
+      font-size: 2em;
+      font-weight: 600;
+      color: #0c63e4;
+      padding: 5%;
+    }
+    #bio{
+      display: flex;
+      align-items: center;
+    }
+
+    .container.blogbody strong {
+      display: block;
+      text-align: center;
+    }
+
+@media (max-width:426px){
+    .contactButton{
+      display: none;
+    }
+    #sopCVMot{
+      display: flex;
+      margin: auto;
+      justify-items: center;
+    }
+    .studCon{
+      display: flex;
+      flex-direction: column;
+    }
+    .studConBtn{
+      display: flex;
+      margin: auto;
+      justify-items: center;
+    }
+    .adIntro{
+      font-size: 0.9em;
+      font-weight: 200;
+    }
+    .row.row-content.cardServStudy{
+      width: 90vw;
+      font-size: x-small;
+    }
+
+  .blogimg{
+      height: 49.5%;
+      width: 100%;
+      margin-top: 0%;
+    }
+
+    .mediaOverlay{
+      width: 85%;
+      margin: auto;
+      vertical-align: middle;
+      background-color: rgba(0, 0, 0.5, 0.9);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .blogPoster{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border-radius: 7%;
+      opacity: 0.4;
+      height: 40%; 
+      width: 95%;
+    }
+    .container.main, .row.row-content.cardServStudy {
+      align-content: center;
+      align-items: center;
+      margin: auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:996px){
+  .blogimg{
+      height: 3.5%;
+      width: 100%;
+      margin-top: 0%;
+    }
+
+    .mediaOverlay{
+      width: 65%;
+      margin: auto;
+      vertical-align: middle;
+      background-color: rgba(0, 0, 0.5, 0.9);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .blogPoster{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border-radius: 7%;
+      opacity: 0.4;
+      height: 55%; 
+      width: 95%;
+    }
+
+    .container.main, .row.row-content.cardServStudy {
+      align-content: center;
+      align-items: center;
+      margin: auto;
+    }
+}
+
+@media (min-width:427px) and (max-width:728px){
+  .contactButton{
+    display: none;
+  }
+  #sopCVMot{
+    display: flex;
+    margin: auto;
+    justify-items: center;
+  }
+  .studCon{
+    display: flex;
+    flex-direction: column;
+  }
+  .studConBtn{
+    display: flex;
+    margin: auto;
+    justify-items: center;
+  }
+  .adIntro{
+    font-size: 0.9em;
+    font-weight: 200;
+  }
+  .row.row-content.cardServStudy{
+    width: 90vw;
+    font-size: x-small;
+  }
+  .blogimg{
+      height: 3.5%;
+      width: 100%;
+      margin-top: 0%;
+    }
+
+    .mediaOverlay{
+      width: 65%;
+      margin: auto;
+      vertical-align: middle;
+      background-color: rgba(0, 0, 0.5, 0.9);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .blogPoster{
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border-radius: 7%;
+      opacity: 0.4;
+      height: 55%; 
+      width: 95%;
+    }
+
+    .container.main, .row.row-content.cardServStudy {
+      align-content: center;
+      align-items: center;
+      margin: auto;
+    }
+}
